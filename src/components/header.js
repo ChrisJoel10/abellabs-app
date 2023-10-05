@@ -1,6 +1,7 @@
-import React from 'react';
-import { AppBar, Container, Divider, IconButton, Link, ListItem, SwipeableDrawer, Toolbar, useMediaQuery } from '@mui/material';
-import MenuIcon from '@mui/icons-material/MenuIcon';
+import React, { useState } from 'react';
+import { AppBar, Container, Divider, IconButton, Link, List, ListItem, SwipeableDrawer, Toolbar, useMediaQuery } from '@mui/material';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import MenuIcon from '@mui/icons-material/Menu';
 import './component.css';
 
 const navigationLinks = [
@@ -11,13 +12,12 @@ const navigationLinks = [
   { name: 'Contact', href: 'section5' }
 ];
 
+
 const Header = () => {
 
-  const menuItemStyle = {
-    marginRight: '20px'
-  }
-
   const isSmallScreen = useMediaQuery('(max-width:768px)');
+  
+  const [open, setOpen] = useState(false);
 
   return (
     <AppBar position="fixed" color='inherit' elevation={0} className='appBarStyle'>
@@ -34,7 +34,6 @@ const Header = () => {
                 underline="none"
                 href={item.href}
                 key={item.name}
-                style={menuItemStyle}
               >
                 {item.name}
               </Link>
@@ -44,15 +43,16 @@ const Header = () => {
           (
             <>
               <IconButton>
-                <MenuIcon />
+                <MenuIcon onClick={()=> setOpen(true)} />
               </IconButton>
-              <SwipeableDrawer anchor='right' open={true}>
-                <IconButton>
-                  <ChevronRight />
-                </IconButton>
+              <SwipeableDrawer anchor='right' open={open} onOpen= {setOpen(true)} onClose={setOpen(false)}>
+                <div>
+                  <IconButton>
+                    <ChevronRightIcon onClick={() => setOpen(false)} />
+                  </IconButton>
+                </div>
                 <Divider />
                 <List>
-
                   {navigationLinks.map((item) => (
                     <ListItem>
                       <Link
@@ -61,7 +61,6 @@ const Header = () => {
                         underline="none"
                         href={item.href}
                         key={item.name}
-                        style={menuItemStyle}
                       >
                         {item.name}
                       </Link>
@@ -75,9 +74,5 @@ const Header = () => {
     </AppBar>
   );
 };
-
-const mobileMenu = () => {
-
-}
 
 export default Header;

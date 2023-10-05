@@ -12,6 +12,10 @@
     font-size: x-large;
   }
   
+.nav-links{
+    display: flex!important;
+    gap: 20px;
+}
 
 /* main */
 .main-container {
