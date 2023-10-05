@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <Container maxWidth="sm">
         <Typography variant="body2" color="textSecondary" align="center">
-          © {new Date().getFullYear()} My React App. All rights reserved.
+          © {new Date().getFullYear()} Abel Labs. All rights reserved.
         </Typography>
       </Container>
     </footer>
