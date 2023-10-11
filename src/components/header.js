@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
-import { AppBar, Container, Divider, IconButton, Link, List, ListItem, SwipeableDrawer, Toolbar, useMediaQuery } from '@mui/material';
+import { AppBar, Container, Divider, IconButton, Link, List, ListItem, Drawer, Toolbar, useMediaQuery } from '@mui/material';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import MenuIcon from '@mui/icons-material/Menu';
 import './component.css';
 
 const navigationLinks = [
-  { name: 'About Us', href: "section1" },
-  { name: 'Our Services', href: 'section2' },
-  { name: 'Area of Expertise', href: 'section3' },
-  { name: 'Our approach', href: 'section4' },
-  { name: 'Contact', href: 'section5' }
+  { name: 'About Us', href: "#about-us" },
+  { name: 'Our Services', href: '#our-services' },
+  { name: 'Area of Expertise', href: '#area-of-expertise' },
+  { name: 'Our approach', href: '#our-approach' },
+  { name: 'Contact', href: '#contact' }
 ];
 
 
 const Header = () => {
 
-  const isSmallScreen = useMediaQuery('(max-width:768px)');
-  
+  const isSmallScreen = useMediaQuery('(max-width:860px)');
+
   const [open, setOpen] = useState(false);
 
   return (
@@ -42,19 +42,19 @@ const Header = () => {
         ) :
           (
             <>
-              <IconButton>
-                <MenuIcon onClick={()=> setOpen(true)} />
+              <IconButton onClick={()=> setOpen(true)}>
+                <MenuIcon />
               </IconButton>
-              <SwipeableDrawer anchor='right' open={open} onOpen= {setOpen(true)} onClose={setOpen(false)}>
+              <Drawer anchor='right' open={open} onOpen={() => setOpen(true)} onClose={() => setOpen(false)}>
                 <div>
-                  <IconButton>
-                    <ChevronRightIcon onClick={() => setOpen(false)} />
+                  <IconButton onClick={() => setOpen(false)} >
+                    <ChevronRightIcon />
                   </IconButton>
                 </div>
                 <Divider />
                 <List>
                   {navigationLinks.map((item) => (
-                    <ListItem>
+                    <ListItem key={item.name}>
                       <Link
                         color="textPrimary"
                         variant="button"
@@ -67,7 +67,7 @@ const Header = () => {
                     </ListItem>
                   ))}
                 </List>
-              </SwipeableDrawer>
+              </Drawer>
             </>
           )}
       </Toolbar>
