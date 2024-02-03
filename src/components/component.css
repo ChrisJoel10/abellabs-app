@@ -37,11 +37,18 @@
 .cell-2 {
 }
 
+.align-center-1 {
+    display: flex;
+    align-items: center;
+}
 
 @media screen and (max-width: 860px) {
     .section-container{
         flex-direction: column;
         gap: 20px;
+    }
+    .cell-1{
+        width: 100%;
     }
     .even-1{
         order: 0;
@@ -52,6 +59,9 @@
     .footer {
         gap: 10px !important;
         flex-direction: column;    
+    }
+    .align-center-1 {
+        display: inline-block;
     }
 }
 
