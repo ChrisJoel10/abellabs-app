@@ -32,6 +32,5 @@ jobs:
       with:
         server: ftp.abellabs.com
         local-dir: ./build/
-        server-dir: v2/
-        username: gitfptuser1@abellabs.com	
-        password: 3_Ly{dr~MY]Y
+        username: ${{ secrets.ftp_username }}
+        password: ${{ secrets.ftp_password }}
