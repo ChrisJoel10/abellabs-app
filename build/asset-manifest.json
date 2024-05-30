@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "./static/css/main.5e72c94f.css",
-    "main.js": "./static/js/main.f957edb8.js",
+    "main.css": "./static/css/main.17e5a9bc.css",
+    "main.js": "./static/js/main.fd85de8a.js",
     "static/js/787.61fcd53e.chunk.js": "./static/js/787.61fcd53e.chunk.js",
     "static/media/section4-image.jpg": "./static/media/section4-image.b2b9e9aeb67475a2763f.jpg",
     "static/media/section1-image.jpg": "./static/media/section1-image.ee03edd794d9747475c5.jpg",
     "static/media/section2-image.jpg": "./static/media/section2-image.f5d087f289ba2a30907a.jpg",
     "static/media/section3-image.jpg": "./static/media/section3-image.8029c1e905a92a50215e.jpg",
+    "static/media/abel_logo.jpg": "./static/media/abel_logo.aa490f17c3dcf66ee923.jpg",
     "index.html": "./index.html",
-    "main.5e72c94f.css.map": "./static/css/main.5e72c94f.css.map",
-    "main.f957edb8.js.map": "./static/js/main.f957edb8.js.map",
+    "main.17e5a9bc.css.map": "./static/css/main.17e5a9bc.css.map",
+    "main.fd85de8a.js.map": "./static/js/main.fd85de8a.js.map",
     "787.61fcd53e.chunk.js.map": "./static/js/787.61fcd53e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e72c94f.css",
-    "static/js/main.f957edb8.js"
+    "static/css/main.17e5a9bc.css",
+    "static/js/main.fd85de8a.js"
   ]
 }

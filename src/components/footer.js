@@ -7,7 +7,7 @@ import BusinessIcon from '@mui/icons-material/Business';
 const Footer = () => {
   return (
     <footer className='footer-container'>
-      <Container maxWidth='lg' id="contact">
+      <Container maxWidth='lg' id="contact" sx={{ paddingTop: '15px'}}>
         <h3>Contact</h3>
         <Box>
           <Box className='footer'>

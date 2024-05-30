@@ -1,10 +1,14 @@
 import React from 'react';
+import CarouselComponent from './carousel';
 import { Container, Typography } from '@mui/material';
 
 const Main = () => {
   return (
     <div className="main-container">
       <Container maxWidth='lg'>
+      <div className="section-container">
+        <CarouselComponent></CarouselComponent>
+      </div>
         <div className="section-container" id="about-us">
           <div className='align-center-1'>
             <img className='cell-1' src={require('../assets/images/section1-image.jpg')}></img>

@@ -3,6 +3,7 @@ import { AppBar, Container, Divider, IconButton, Link, List, ListItem, Drawer, T
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import MenuIcon from '@mui/icons-material/Menu';
 import './component.css';
+import { Height } from '@mui/icons-material';
 
 const navigationLinks = [
   { name: 'About Us', href: "#about-us" },
@@ -23,7 +24,8 @@ const Header = () => {
     <AppBar position="fixed" color='inherit' elevation={0} className='appBarStyle'>
       <Toolbar>
         <Container className='logo'>
-          <div>Abel Labs</div>
+          <img className='img-logo' src={require('../assets/images/abel_logo.jpg')}></img>
+          {/* <div>Abel Labs</div> */}
         </Container>
         {!isSmallScreen ? (
           <Container className='nav-links'>

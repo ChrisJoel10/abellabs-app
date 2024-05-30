@@ -10,6 +10,9 @@
 .logo {
     font-weight: 700;
     font-size: x-large;
+    .img-logo {
+        height: 100px;
+    }
   }
   
 .nav-links{
@@ -82,4 +85,11 @@
 
 .contact {
     text-decoration: none;
+}
+
+.carousel-caption {
+    bottom: unset !important;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.8vw;
 }
