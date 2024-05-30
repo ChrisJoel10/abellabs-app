@@ -2,6 +2,7 @@ on:
    push:
     paths-ignore:
       - '.github/'
+      
 name: 🚀 Deploy website on push to abellabs.com/v2
 env:
    CI: false
