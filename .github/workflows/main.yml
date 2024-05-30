@@ -1,5 +1,5 @@
 on: push
-name: 🚀 Deploy website on push
+name: 🚀 Deploy website on push to abellabs.com/v2
 env:
    CI: false
 
@@ -25,5 +25,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ftp.abellabs.com
+        local-dir: ./build/
         username: gitfptuser1@abellabs.com	
         password: 3_Ly{dr~MY]Y
