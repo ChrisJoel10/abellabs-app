@@ -6,7 +6,7 @@ import './component.css';
 import { Height } from '@mui/icons-material';
 
 const navigationLinks = [
-  { name: 'About Us', href: "#about-us" },
+  { name: 'About Us test', href: "#about-us" },
   { name: 'Our Services', href: '#our-services' },
   { name: 'Area of Expertise', href: '#area-of-expertise' },
   { name: 'Our approach', href: '#our-approach' },
