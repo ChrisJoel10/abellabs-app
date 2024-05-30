@@ -32,4 +32,4 @@ jobs:
         local-dir: ./build/
         server-dir: v2/
         username: ${{ secrets.ftp_username }}
-        password: ${{ secrets.ftp_password }}
+        password: ${{ secrets.ftp_password }} 
