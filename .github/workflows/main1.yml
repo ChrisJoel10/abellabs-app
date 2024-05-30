@@ -5,7 +5,7 @@ on:
         description: ""
         default: ""
 
-name: 🚀 Deploy website on push to abellabs.com
+name: 🚀 Deploy to abellabs.com
 env:
    CI: false
 
