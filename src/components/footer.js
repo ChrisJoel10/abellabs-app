@@ -3,14 +3,21 @@ import { Typography, Container, Box } from '@mui/material';
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 import BusinessIcon from '@mui/icons-material/Business';
+import ContactFormComponent from './contact-form';
+
 
 const Footer = () => {
   return (
     <footer className='footer-container'>
       <Container maxWidth='lg' id="contact" sx={{ paddingTop: '15px'}}>
-        <h3>Contact</h3>
         <Box>
+        <h3>Contact Us</h3>
+
           <Box className='footer'>
+            <Box>
+              <ContactFormComponent></ContactFormComponent>
+
+          </Box>
             <Box sx={{ display: 'flex', gap: '12px'}}>
               <BusinessIcon />
               Abel Labs <br />

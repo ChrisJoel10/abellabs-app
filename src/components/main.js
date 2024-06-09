@@ -72,6 +72,7 @@ const Main = () => {
             <img className='cell-1 even-1' src={require('../assets/images/section4-image.jpg')}></img>
           </div>
         </div>
+
       </Container>
     </div>
 

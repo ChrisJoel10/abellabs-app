@@ -93,3 +93,11 @@
     transform: translateY(-50%);
     font-size: 1.8vw;
 }
+
+.padding10 {
+    margin: 5px 5px 10px 0 !important;
+}
+
+.padding5 {
+    margin: 0 5px 5px 0 !important;
+}
