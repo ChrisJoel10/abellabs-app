@@ -56,7 +56,7 @@ const onSubmit = async (event) => {
             <HelperText />
             <label required >Message</label>
             <br/>        
-            <TextareaAutosize className="padding10" required name="message" placeholder="" />
+            <TextareaAutosize minRows={3} className="padding10" required name="message" placeholder="" />
             <HelperText />
             <br/>
             <Button className="padding10" type="submit" variant="contained" endIcon={<SendIcon />}>
