@@ -11,9 +11,9 @@ const CarouselComponent = () => {
     };
     return (
         <div>
-            <Carousel activeIndex={index} onSelect={handleSelect} pause="hover" wrap={true} interval={3000}>
+            <Carousel activeIndex={index} onSelect={handleSelect} pause="hover" wrap={true} interval={300000}>
                 <Carousel.Item>
-                    <img src={require('../assets/images/black.png')} className='d-block w-100' alt='...' />
+                    <img src={require('../assets/images/abellabs-background.png')} className='d-block w-100 card-overlay' alt='...' />
                     <Carousel.Caption>
                         {/* <p>First slide label</p> */}
                         <p>Whether your organization doesn't have a nightly test or has one that isn't effective, we're here to assist.</p>
@@ -21,7 +21,7 @@ const CarouselComponent = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={require('../assets/images/black.png')} className='d-block w-100' alt='...' />
+                    <img src={require('../assets/images/abellabs-background.png')} className='d-block w-100 card-overlay' alt='...' />
                     <Carousel.Caption>
                         {/* <p>Second slide label</p> */}
                         <p>Have your engineers convinced you that specific tests cannot be automated, leading to a reliance on manual testing?</p>
@@ -29,7 +29,7 @@ const CarouselComponent = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={require('../assets/images/black.png')} className='d-block w-100' alt='...' />
+                    <img src={require('../assets/images/abellabs-background.png')} className='d-block w-100 card-overlay' alt='...' />
                     <Carousel.Caption>
                         {/* <p>Third slide label</p> */}
                         <p>
@@ -39,7 +39,7 @@ const CarouselComponent = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={require('../assets/images/black.png')} className='d-block w-100' alt='...' />
+                    <img src={require('../assets/images/abellabs-background.png')} className='d-block w-100 card-overlay' alt='...' />
                     <Carousel.Caption>
                         {/* <p>Third slide label</p> */}
                         <p>
@@ -51,7 +51,7 @@ const CarouselComponent = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={require('../assets/images/black.png')} className='d-block w-100' alt='...' />
+                    <img src={require('../assets/images/abellabs-background.png')} className='d-block w-100 card-overlay' alt='...' />
                     <Carousel.Caption>
                         {/* <p>Third slide label</p> */}
                         <p>
@@ -66,7 +66,7 @@ const CarouselComponent = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={require('../assets/images/black.png')} className='d-block w-100' alt='...' />
+                    <img src={require('../assets/images/abellabs-background.png')} className='d-block w-100 card-overlay' alt='...' />
                     <Carousel.Caption>
                         {/* <p>Third slide label</p> */}
                         <p>
@@ -81,7 +81,7 @@ const CarouselComponent = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={require('../assets/images/black.png')} className='d-block w-100' alt='...' />
+                    <img src={require('../assets/images/abellabs-background.png')} className='d-block w-100 card-overlay' alt='...' />
                     <Carousel.Caption>
                         {/* <p>Third slide label</p> */}
                         <p>
@@ -93,7 +93,7 @@ const CarouselComponent = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={require('../assets/images/black.png')} className='d-block w-100' alt='...' />
+                    <img src={require('../assets/images/abellabs-background.png')} className='d-block w-100 card-overlay' alt='...' />
                     <Carousel.Caption>
                         {/* <p>Third slide label</p> */}
                         <p>
@@ -105,7 +105,7 @@ const CarouselComponent = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={require('../assets/images/black.png')} className='d-block w-100' alt='...' />
+                    <img src={require('../assets/images/abellabs-background.png')} className='d-block w-100 card-overlay' alt='...' />
                     <Carousel.Caption>
                         {/* <p>Third slide label</p> */}
                         <p>
@@ -117,7 +117,7 @@ const CarouselComponent = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={require('../assets/images/black.png')} className='d-block w-100' alt='...' />
+                    <img src={require('../assets/images/abellabs-background.png')} className='d-block w-100 card-overlay' alt='...' />
                     <Carousel.Caption>
                         {/* <p>Third slide label</p> */}
                         <p>
@@ -129,7 +129,7 @@ const CarouselComponent = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={require('../assets/images/black.png')} className='d-block w-100' alt='...' />
+                    <img src={require('../assets/images/abellabs-background.png')} className='d-block w-100 card-overlay' alt='...' />
                     <Carousel.Caption>
                         {/* <p>Third slide label</p> */}
                         <p>
